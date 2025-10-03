@@ -5,12 +5,15 @@ interface SponsorCardProps {
     logoUrl: string;
     name: string;
     description: string;
-    onClick: () => void;
+    websiteUrl: string;
 }
 
-const SponsorCard: React.FC<SponsorCardProps> = ({ logoUrl, name, description, onClick }) => {
+const SponsorCard: React.FC<SponsorCardProps> = ({ logoUrl, name, description, websiteUrl }) => {
+    const handleClick = () => {
+        window.open(websiteUrl, '_blank', 'noopener,noreferrer');
+    };
     return (
-        <div className="sponsor-card" onClick={onClick}>
+        <div className="sponsor-card" onClick={handleClick}>
             <img src={logoUrl} alt={`${name} logo`} className="sponsor-logo" />
             <h3>{name}</h3>
             <p>{description}</p>

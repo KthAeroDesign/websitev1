@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
@@ -20,9 +19,6 @@ const Home = () => {
         // Här kan du senare lägga till logik för att öppna en modal eller navigera till en ny sida.
     };
 
-    const handleSponsorClick = (sponsorName: string) => {
-        alert(`Du klickade på sponsorn: ${sponsorName}`);
-    };
 
 
     return (
@@ -55,19 +51,19 @@ const Home = () => {
                             logoUrl={sarcLogo}
                             name="SARC — Swedish Aerospace Research Center"
                             description="SARC is a strategic collaboration of Swedish universities and research organisations conducting research and education within the aerospace sector."
-                            onClick={() => handleSponsorClick('SARC')}
+                            websiteUrl="https://www.sarc.center/"
                         />
                         <SponsorCard
                             logoUrl={vaxholmLogo}
                             name="Vaxholm Komposit"
                             description="One of the foremost companies in composite manufacturing in Sweden. They supply the team with a composite workshop as well as crucial know-how."
-                            onClick={() => handleSponsorClick('Vaxholm Komposit')}
+                            websiteUrl="https://www.vaxholmkomposit.se/"
                         />
                         <SponsorCard
                             logoUrl={fmvLogo}
                             name="Försvarets Materielverk (FMV)"
                             description="FMV procures, develops, and delivers equipment and services to the Swedish Armed Forces."
-                            onClick={() => handleSponsorClick('FMV')}
+                            websiteUrl="https://www.fmv.se/"
                         />
                     </div>
                 </section>
