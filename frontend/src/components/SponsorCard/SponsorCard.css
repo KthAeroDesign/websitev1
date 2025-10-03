@@ -1,0 +1,35 @@
+.sponsor-card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sponsor-logo {
+    max-width: 150px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    align-self: flex-start;
+}
+
+.sponsor-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.sponsor-card p {
+    color: #a0a0a0;
+    line-height: 1.6;
+    flex-grow: 1;
+    /* Makes description take up available space */
+}

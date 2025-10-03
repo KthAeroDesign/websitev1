@@ -1,0 +1,55 @@
+.apply-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    /* Offset for fixed header */
+}
+
+.apply-content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.apply-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.apply-content p {
+    color: #a0a0a0;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: inline-flex;
+    background-color: var(--card-background);
+    border-radius: 50px;
+    padding: 6px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.tabs button {
+    background-color: transparent;
+    border: none;
+    color: #a0a0a0;
+    padding: 10px 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+.tabs button.active {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.form-area {
+    min-height: 100px;
+    /* Just to give some space */
+}
