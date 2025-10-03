@@ -1,0 +1,61 @@
+# ---- Global ----
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# ---- Node / Frontend ----
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env.local
+frontend/.env.*.local
+
+# ---- Java / Backend ----
+backend/target/
+backend/build/
+backend/.gradle/
+backend/.mvn/
+backend/mvnw.*
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/.idea/
+backend/*.iml
+
+# ---- IntelliJ / VSCode ----
+.idea/
+*.iml
+.vscode/
+*.code-workspace
+
+# ---- OS / Editor ----
+*.~lock.*
+*.orig
+
+# ---- Docker ----
+*.pid
+*.seed
+.env
+infra/*.env
+
+# ---- Logs ----
+logs/
+*.log
+backend/spring.log
+
+# ---- Test coverage / reports ----
+coverage/
+frontend/coverage/
+backend/coverage/
+*.lcov
+
+# ---- Build artifacts ----
+*.jar
+*.war
+*.ear
+*.class
+
