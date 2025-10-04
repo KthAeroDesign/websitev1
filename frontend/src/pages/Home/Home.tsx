@@ -7,7 +7,7 @@ import Footer from '../../components/Footer/Footer';
 import './Home.css'; // För sid-specifik layout
 
 // Importera bilder
-import sarcLogo from '../../assets/sarc-logo.png'; // Exempel, lägg loggor i en assets-mapp
+import sarcLogo from '../../assets/sarc-logo.png'; 
 import vaxholmLogo from '../../assets/vaxholm-logo.png';
 import fmvLogo from '../../assets/fmv-logo.png';
 
@@ -16,7 +16,6 @@ const Home = () => {
 
     const handleProjectClick = (projectName: string) => {
         alert(`Du klickade på projektet: ${projectName}`);
-        // Här kan du senare lägga till logik för att öppna en modal eller navigera till en ny sida.
     };
 
 
