@@ -1,17 +1,25 @@
 import './Header.css';
 import logo from '../../assets/logo.png';
+import { FiFileText, FiHome } from 'react-icons/fi';
 
 const Header = () => {
     return (
         <header className="site-header">
             <div className="header-container">
-                <div className="brand">
+                <a href="/" className="brand">
                     <img src={logo} alt="KTH Aero Design logo" className="logo-image" />
                     <h1 className="logo">KTH Aero Design</h1>
-                </div>
+                </a>
                 <nav className="header-nav">
-                    <a href="/">Home</a>
-                    <a href="/apply">Apply</a>
+                    <a href="/" className="home-link">
+                        <span>Home</span>
+                        <FiHome className="nav-icon" aria-hidden="true" />
+                    </a>
+                    <a href="/apply" className="apply-link">
+                        <span>Apply</span>
+                        <FiFileText className="nav-icon" aria-hidden="true" />
+
+                    </a>
                 </nav>
             </div>
         </header>
