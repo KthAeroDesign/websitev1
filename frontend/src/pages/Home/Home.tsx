@@ -21,6 +21,7 @@ const Home = () => {
     return (
         <>
             <Header />
+        
             <Hero />
             <main className="container">
                 <section id="projects" className="projects-section">
@@ -63,7 +64,9 @@ const Home = () => {
                             websiteUrl="https://www.fmv.se/"
                         />
                     </div>
+                    
                 </section>
+                
             </main>
             <Footer />
         </>
