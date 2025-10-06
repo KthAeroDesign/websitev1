@@ -18,8 +18,6 @@ const Home = () => {
         alert(`Du klickade på projektet: ${projectName}`);
     };
 
-
-
     return (
         <>
             <Header />
