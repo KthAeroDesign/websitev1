@@ -1,42 +1,43 @@
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import SponsorCard from '../../components/SponsorCard/SponsorCard';
 import About from '../../components/About/About';
 import Footer from '../../components/Footer/Footer';
+import { projects } from '../../data/projects';
 import './Home.css'; // För sid-specifik layout
 
 // Importera bilder
-import sarcLogo from '../../assets/sarc-logo.png'; 
+import sarcLogo from '../../assets/sarc-logo.png';
 import vaxholmLogo from '../../assets/vaxholm-logo.png';
 import fmvLogo from '../../assets/fmv-logo.png';
 
 
 const Home = () => {
+    const navigate = useNavigate();
 
-    const handleProjectClick = (projectName: string) => {
-        alert(`Du klickade på projektet: ${projectName}`);
+    const handleProjectClick = (projectId: string) => {
+        navigate(`/projects/${projectId}`);
     };
 
     return (
         <>
             <Header />
-        
+
             <Hero />
             <main className="container">
                 <section id="projects" className="projects-section">
                     <h2>Our projects</h2>
                     <div className="cards-container">
-                        <ProjectCard
-                            title="New Flying Competition 2025 – NFC-25"
-                            description="The NFC-25 aircraft is our first competition UAV, designed to comply with New Flying Competition 2025 regulations. Manufacturing is in its final stages."
-                            onClick={() => handleProjectClick('NFC-25')}
-                        />
-                        <ProjectCard
-                            title="Modular Drone System – MDS"
-                            description="A project with the purpose of developing modular systems for drone applications. Work begins this fall."
-                            onClick={() => handleProjectClick('MDS')}
-                        />
+                        {projects.map((project) => (
+                            <ProjectCard
+                                key={project.id}
+                                title={project.title}
+                                description={project.description}
+                                onClick={() => handleProjectClick(project.id)}
+                            />
+                        ))}
                     </div>
                 </section>
 
@@ -64,9 +65,9 @@ const Home = () => {
                             websiteUrl="https://www.fmv.se/"
                         />
                     </div>
-                    
+
                 </section>
-                
+
             </main>
             <Footer />
         </>

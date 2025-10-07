@@ -5,6 +5,9 @@
     border: 1px solid var(--border-color);
     cursor: pointer;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
 }
 
 .project-card:hover {
@@ -20,10 +23,14 @@
 .project-card p {
     color: #a0a0a0;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .project-card .read-more {
     display: inline-block;
     margin-top: 1rem;
     font-weight: 500;
+    color: white;
+    transition: color 0.2s ease;
+    align-self: flex-start;
 }

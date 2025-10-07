@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, onClick }
         <div className="project-card" onClick={onClick}>
             <h3>{title}</h3>
             <p>{description}</p>
-            <a href="#" className="read-more">Read more →</a>
+            <div className="read-more">Read more →</div>
         </div>
     );
 };
