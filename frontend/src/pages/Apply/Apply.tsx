@@ -25,10 +25,56 @@ const Apply = () => {
                             PR Team
                         </button>
                     </div>
-                    {/* Här kan du visa olika formulär baserat på activeTab */}
+                    {/* Google Forms baserat på activeTab */}
                     <div className="form-area">
-                        {activeTab === 'General' && <p>Formulär för "General" visas här.</p>}
-                        {activeTab === 'PR Team' && <p>Formulär för "PR Team" visas här.</p>}
+                        {activeTab === 'General' && (
+                            <div className="form-panel">
+                                <div className="form-embed">
+                                    <iframe
+                                        src="https://docs.google.com/forms/d/e/1FAIpQLSesTrVxWbkJ7Hyi6uf0UY-Nvlzb5H98yuBXm7PWrSTOtP5yjw/viewform?embedded=true"
+                                        title="General Application Form"
+                                        loading="lazy"
+                                        frameBorder="0"
+                                        marginHeight={0}
+                                        marginWidth={0}>
+                                        Loading…
+                                    </iframe>
+                                </div>
+                                <p className="form-alt">
+                                    Prefer a new tab?
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLSesTrVxWbkJ7Hyi6uf0UY-Nvlzb5H98yuBXm7PWrSTOtP5yjw/viewform"
+                                        target="_blank"
+                                        rel="noopener">
+                                        Open form ↗
+                                    </a>
+                                </p>
+                            </div>
+                        )}
+                        {activeTab === 'PR Team' && (
+                            <div className="form-panel">
+                                <div className="form-embed">
+                                    <iframe
+                                        src="https://docs.google.com/forms/d/e/1FAIpQLScEzUVLnxHQQBNwZLt4M6NWDn4aD3NAn2tTrbQZ7qNdmpugGg/viewform?embedded=true"
+                                        title="PR Team Application Form"
+                                        loading="lazy"
+                                        frameBorder="0"
+                                        marginHeight={0}
+                                        marginWidth={0}>
+                                        Loading…
+                                    </iframe>
+                                </div>
+                                <p className="form-alt">
+                                    Prefer a new tab?
+                                    <a
+                                        href="https://docs.google.com/forms/d/e/1FAIpQLScEzUVLnxHQQBNwZLt4M6NWDn4aD3NAn2tTrbQZ7qNdmpugGg/viewform"
+                                        target="_blank"
+                                        rel="noopener">
+                                        Open form ↗
+                                    </a>
+                                </p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
