@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Apply from './pages/Apply/Apply';
 import ProjectDetail from './pages/ProjectDetail/ProjectDetail';
+import BackEndTest from './components/BackendTest/BackEndTest';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/projects/:projectId" element={<ProjectDetail />} />
+        <Route path="/test" element={<BackEndTest />} />
       </Routes>
     </Router>
   );
