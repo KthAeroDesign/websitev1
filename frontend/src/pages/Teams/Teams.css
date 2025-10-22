@@ -50,6 +50,16 @@
     overflow: hidden;
 }
 
+.team-card.clickable {
+    cursor: pointer;
+}
+
+.team-card.clickable:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.15);
+}
+
 .team-card::before {
     content: '';
     position: absolute;
@@ -209,4 +219,19 @@
     .team-card h3 {
         font-size: 1.5rem;
     }
+}
+
+.click-hint {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.team-card.clickable:hover .click-hint {
+    opacity: 1;
 }

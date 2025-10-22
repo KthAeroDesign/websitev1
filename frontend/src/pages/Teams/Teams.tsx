@@ -1,45 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import { teams } from '../../data/teams';
 import './Teams.css';
 
 const Teams = () => {
-    const teams = [
-        {
-            name: 'Concept',
-            description: 'Responsible for the overall design concept, mission requirements, and strategic planning of aircraft projects.',
-            responsibilities: ['Mission analysis', 'Concept development', 'Requirements specification', 'System integration planning']
-        },
-        {
-            name: 'Aerodynamics',
-            description: 'Focuses on optimizing aircraft performance through aerodynamic design and analysis.',
-            responsibilities: ['Wing design', 'CFD analysis', 'Wind tunnel testing', 'Performance optimization']
-        },
-        {
-            name: 'Structure & Design',
-            description: 'Handles structural integrity, materials selection, and mechanical design of aircraft components.',
-            responsibilities: ['Structural analysis', 'CAD modeling', 'Materials selection', 'Load calculations']
-        },
-        {
-            name: 'Manufacturing',
-            description: 'Responsible for production planning, manufacturing processes, and quality control.',
-            responsibilities: ['Manufacturing planning', 'Process optimization', 'Quality assurance', 'Production coordination']
-        },
-        {
-            name: 'Test & Evaluation',
-            description: 'Conducts testing procedures, data analysis, and performance validation.',
-            responsibilities: ['Test planning', 'Data collection', 'Performance analysis', 'Validation procedures']
-        },
-        {
-            name: 'Electronics',
-            description: 'Develops and integrates electronic systems, avionics, and control systems.',
-            responsibilities: ['Avionics design', 'Control systems', 'Sensor integration', 'Electronic testing']
-        },
-        {
-            name: 'PR & Marketing',
-            description: 'Manages public relations, marketing initiatives, and external communications.',
-            responsibilities: ['Social media management', 'Event coordination', 'Sponsor relations', 'Content creation']
-        }
-    ];
+    const navigate = useNavigate();
+
+    const handleTeamClick = (teamId: string) => {
+        navigate(`/teams/${teamId}`);
+    };
 
     return (
         <>
@@ -53,7 +23,11 @@ const Teams = () => {
 
                     <div className="teams-grid">
                         {teams.map((team, index) => (
-                            <div key={index} className="team-card">
+                            <div
+                                key={index}
+                                className="team-card clickable"
+                                onClick={() => handleTeamClick(team.id)}
+                            >
                                 <h3>{team.name}</h3>
                                 <p className="team-description">{team.description}</p>
                                 <div className="team-responsibilities">
@@ -63,6 +37,9 @@ const Teams = () => {
                                             <li key={idx}>{responsibility}</li>
                                         ))}
                                     </ul>
+                                </div>
+                                <div className="click-hint">
+                                    <span>Click to learn more →</span>
                                 </div>
                             </div>
                         ))}
