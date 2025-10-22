@@ -59,17 +59,6 @@ const TeamDetail = () => {
                             </div>
                         </section>
 
-                        {/* Current Focus */}
-                        <section className="team-section focus-section">
-                            <div className="section-header">
-                                <FiTarget className="section-icon" />
-                                <h3>Current Focus</h3>
-                            </div>
-                            <div className="section-content">
-                                <p>{team.currentFocus}</p>
-                            </div>
-                        </section>
-
                         {/* Goals */}
                         <section className="team-section goals-section">
                             <div className="section-header">
@@ -106,7 +95,7 @@ const TeamDetail = () => {
                         <section className="team-section skills-section">
                             <div className="section-header">
                                 <FiTool className="section-icon" />
-                                <h3>Required Skills</h3>
+                                <h3>What We Work With</h3>
                             </div>
                             <div className="section-content">
                                 <div className="skills-grid">

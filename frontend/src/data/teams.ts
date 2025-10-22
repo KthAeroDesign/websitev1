@@ -7,7 +7,6 @@ export interface Team {
     goals: string[];
     skills: string[];
     projects?: string[];
-    currentFocus: string;
 }
 
 export const teams: Team[] = [
@@ -34,8 +33,7 @@ The team plays a crucial role in requirements specification, ensuring all subsys
             'Aircraft design fundamentals',
             'Requirements analysis',
             'Stakeholder communication'
-        ],
-        currentFocus: 'Currently working on next-generation aircraft concepts for upcoming competitions, with emphasis on sustainability and performance optimization.'
+        ]
     },
     {
         id: 'aerodynamics',
@@ -60,8 +58,7 @@ Wind tunnel testing forms a crucial part of our validation process, allowing us 
             'Aerodynamic theory and applications',
             'MATLAB/Python for data analysis',
             'Airfoil design and optimization'
-        ],
-        currentFocus: 'Developing advanced wing designs with integrated control surfaces and investigating boundary layer control techniques for enhanced performance.'
+        ]
     },
     {
         id: 'structure-design',
@@ -86,8 +83,7 @@ Material selection is a critical aspect of our work, balancing strength, weight,
             'Mechanical design principles',
             'Structural optimization',
             'Manufacturing process understanding'
-        ],
-        currentFocus: 'Exploring lightweight composite materials and developing modular design approaches for improved maintenance and performance.'
+        ]
     },
     {
         id: 'manufacturing',
@@ -112,8 +108,7 @@ Quality assurance is integral to everything we do, ensuring each component meets
             'Machining and fabrication techniques',
             'Additive manufacturing (3D printing)',
             'Supply chain coordination'
-        ],
-        currentFocus: 'Implementing lean manufacturing principles and exploring advanced manufacturing technologies including carbon fiber fabrication techniques.'
+        ]
     },
     {
         id: 'test-evaluation',
@@ -138,8 +133,7 @@ Data analysis is a core competency, using advanced statistical methods and visua
             'Flight testing procedures',
             'Instrumentation and sensors',
             'Report writing and presentation'
-        ],
-        currentFocus: 'Developing automated data collection systems and advanced analytics capabilities for real-time performance monitoring.'
+        ]
     },
     {
         id: 'electronics',
@@ -164,8 +158,7 @@ Sensor integration is a critical capability, incorporating various measurement d
             'Sensor integration and calibration',
             'Wireless communication systems',
             'Electronic testing and debugging'
-        ],
-        currentFocus: 'Developing AI-enhanced flight control systems and implementing advanced sensor fusion techniques for improved navigation accuracy.'
+        ]
     },
     {
         id: 'pr-marketing',
@@ -190,7 +183,6 @@ Sponsor relations are crucial to our success, and we work diligently to maintain
             'Sponsor relationship management',
             'Event planning and coordination',
             'Written and visual communication'
-        ],
-        currentFocus: 'Launching new digital marketing campaigns and developing strategic partnerships with aerospace industry leaders for enhanced collaboration opportunities.'
+        ]
     }
 ];

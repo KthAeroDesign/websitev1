@@ -275,16 +275,12 @@
         grid-template-columns: 2fr 1fr;
         grid-template-areas:
             "about about"
-            "focus responsibilities"
-            "goals skills";
+            "goals responsibilities"
+            "skills skills";
     }
 
     .about-section {
         grid-area: about;
-    }
-
-    .focus-section {
-        grid-area: focus;
     }
 
     .responsibilities-section {
