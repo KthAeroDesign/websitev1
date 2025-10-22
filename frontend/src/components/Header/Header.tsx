@@ -1,6 +1,6 @@
 import './Header.css';
 import logo from '../../assets/logo.png';
-import { FiFileText, FiHome } from 'react-icons/fi';
+import { FiFileText, FiHome, FiUsers } from 'react-icons/fi';
 
 const Header = () => {
     return (
@@ -15,10 +15,13 @@ const Header = () => {
                         <span>Home</span>
                         <FiHome className="nav-icon" aria-hidden="true" />
                     </a>
+                    <a href="/teams" className="teams-link">
+                        <span>Teams</span>
+                        <FiUsers className="nav-icon" aria-hidden="true" />
+                    </a>
                     <a href="/apply" className="apply-link">
                         <span>Apply</span>
                         <FiFileText className="nav-icon" aria-hidden="true" />
-
                     </a>
                 </nav>
             </div>
