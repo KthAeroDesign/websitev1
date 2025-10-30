@@ -115,6 +115,8 @@ const TeamDetail = () => {
                                 </div>
                             </div>
                         </section> */}
+
+
                     </div>
 
 
