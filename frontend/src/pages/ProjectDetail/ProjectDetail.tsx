@@ -38,9 +38,9 @@ const ProjectDetail: React.FC = () => {
                             ← Back to Projects
                         </button>
                         <h1>{project.title}</h1>
-                        <div className="project-status">
+                        {/* <div className="project-status">
                             <span className="status-badge">{project.status}</span>
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="project-content">
@@ -49,7 +49,7 @@ const ProjectDetail: React.FC = () => {
                             <p className="project-description">{project.fullDescription}</p>
                         </section>
 
-                        {project.specifications && (
+                        {/* {project.specifications && (
                             <section className="project-specifications">
                                 <h2>Specifications</h2>
                                 <div className="specs-grid">
@@ -61,9 +61,9 @@ const ProjectDetail: React.FC = () => {
                                     ))}
                                 </div>
                             </section>
-                        )}
+                        )} */}
 
-                        {project.timeline && (
+                        {/* {project.timeline && (
                             <section className="project-timeline">
                                 <h2>Project Timeline</h2>
                                 <div className="timeline">
@@ -78,7 +78,7 @@ const ProjectDetail: React.FC = () => {
                                     ))}
                                 </div>
                             </section>
-                        )}
+                        )} */}
                     </div>
                 </div>
             </main>
