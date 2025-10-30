@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="site-footer">
             <div>
                 <h3>KTH Aero Design</h3>
-                <p>Contact us at: ...</p>
+                {/* <p>Contact us at: ...</p> */}
                 <p>Follow us on social media!</p>
                 <div className="footer-social-icons">
                     <a href="https://www.linkedin.com/company/kth-aero-design-team" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
