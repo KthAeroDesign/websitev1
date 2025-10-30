@@ -59,7 +59,9 @@ const TeamDetail = () => {
                             </div>
                         </section>
 
-                        {/* Goals */}
+
+
+                        {/* Goals
                         <section className="team-section goals-section">
                             <div className="section-header">
                                 <FiTarget className="section-icon" />
@@ -72,9 +74,12 @@ const TeamDetail = () => {
                                     ))}
                                 </ul>
                             </div>
-                        </section>
+                        </section> */}
 
-                        {/* Responsibilities */}
+
+
+
+                        {/* Responsibilities
                         <section className="team-section responsibilities-section">
                             <div className="section-header">
                                 <FiUsers className="section-icon" />
@@ -89,9 +94,12 @@ const TeamDetail = () => {
                                     ))}
                                 </div>
                             </div>
-                        </section>
+                        </section> */}
 
-                        {/* Skills */}
+
+
+
+                        {/* What we work with
                         <section className="team-section skills-section">
                             <div className="section-header">
                                 <FiTool className="section-icon" />
@@ -106,8 +114,12 @@ const TeamDetail = () => {
                                     ))}
                                 </div>
                             </div>
-                        </section>
+                        </section> */}
                     </div>
+
+
+
+
 
                     {/* Call to Action */}
                     <div className="team-cta">
