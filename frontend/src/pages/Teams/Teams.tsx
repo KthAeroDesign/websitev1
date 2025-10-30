@@ -30,14 +30,14 @@ const Teams = () => {
                             >
                                 <h3>{team.name}</h3>
                                 <p className="team-description">{team.description}</p>
-                                <div className="team-responsibilities">
+                                {/* <div className="team-responsibilities">
                                     <h4>Key Responsibilities:</h4>
                                     <ul>
                                         {team.responsibilities.map((responsibility, idx) => (
                                             <li key={idx}>{responsibility}</li>
                                         ))}
                                     </ul>
-                                </div>
+                                </div> */}
                                 <div className="click-hint">
                                     <span>Click to learn more →</span>
                                 </div>
