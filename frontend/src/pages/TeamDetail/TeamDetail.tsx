@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { FiArrowLeft, FiTarget, FiTool, FiUsers } from 'react-icons/fi';
+import { FiArrowLeft } from 'react-icons/fi';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import { teams } from '../../data/teams';
