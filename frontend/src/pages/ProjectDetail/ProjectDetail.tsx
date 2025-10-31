@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProjectById } from '../../data/projects';
 import Header from '../../components/Header/Header';
@@ -8,6 +8,12 @@ import './ProjectDetail.css';
 const ProjectDetail: React.FC = () => {
     const { projectId } = useParams<{ projectId: string }>();
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts or projectId changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [projectId]);
+
     const project = projectId ? getProjectById(projectId) : undefined;
 
     if (!project) {

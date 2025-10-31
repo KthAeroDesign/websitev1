@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { FiArrowLeft } from 'react-icons/fi';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
@@ -8,6 +9,11 @@ import './TeamDetail.css';
 const TeamDetail = () => {
     const { teamId } = useParams<{ teamId: string }>();
     const navigate = useNavigate();
+
+    // Scroll to top when component mounts or teamId changes
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [teamId]);
 
     const team = teams.find(t => t.id === teamId);
 

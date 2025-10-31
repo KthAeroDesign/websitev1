@@ -36,7 +36,7 @@ Key responsibilities include defining mission objectives and the design requirem
     {
         id: 'aerodynamics',
         name: 'Aerodynamics',
-        description: 'Dedicated to advancing vehicle performance through innovative aerodynamic solutions, combining CFD simulations and wind tunnel testing.',
+        description: 'Dedicated to advancing vehicle performance through innovative aerodynamic solutions.',
         responsibilities: ['Wing design', 'CFD analysis', 'Wind tunnel testing', 'Performance optimization'],
         longDescription: `The KTH Aero Design Aerodynamics Team is dedicated to advancing vehicle performance through innovative aerodynamic solutions. Aerodynamics lies at the core of flight, influencing stability, manoeuvrability, and the overall ease of movement through the air. They combine CFD simulations and wind tunnel testing to turn bold ideas into practical improvements in flight dynamics.
 
