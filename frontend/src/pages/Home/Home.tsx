@@ -6,12 +6,8 @@ import SponsorCard from '../../components/SponsorCard/SponsorCard';
 import About from '../../components/About/About';
 import Footer from '../../components/Footer/Footer';
 import { projects } from '../../data/projects';
+import { sponsors } from '../../data/sponsors';
 import './Home.css'; // För sid-specifik layout
-
-// Importera bilder
-import sarcLogo from '../../assets/sarc-logo.png';
-import vaxholmLogo from '../../assets/vaxholm-logo.png';
-import fmvLogo from '../../assets/fmv-logo.png';
 
 
 const Home = () => {
@@ -46,26 +42,16 @@ const Home = () => {
                 <section id="sponsors" className="sponsors-section">
                     <h2>Our sponsors</h2>
                     <div className="cards-container">
-                        <SponsorCard
-                            logoUrl={sarcLogo}
-                            name="SARC — Swedish Aerospace Research Center"
-                            description="SARC is a strategic collaboration of Swedish universities and research organisations conducting research and education within the aerospace sector."
-                            websiteUrl="https://www.sarc.center/"
-                        />
-                        <SponsorCard
-                            logoUrl={vaxholmLogo}
-                            name="Vaxholm Komposit"
-                            description="One of the foremost companies in composite manufacturing in Sweden. They supply the team with a composite workshop as well as crucial know-how."
-                            websiteUrl="https://www.vaxholmkomposit.se/"
-                        />
-                        <SponsorCard
-                            logoUrl={fmvLogo}
-                            name="Försvarets Materielverk (FMV)"
-                            description="FMV procures, develops, and delivers equipment and services to the Swedish Armed Forces."
-                            websiteUrl="https://www.fmv.se/"
-                        />
+                        {sponsors.map((sponsor) => (
+                            <SponsorCard
+                                key={sponsor.id}
+                                logoUrl={sponsor.logoUrl}
+                                name={sponsor.name}
+                                description={sponsor.description}
+                                websiteUrl={sponsor.websiteUrl}
+                            />
+                        ))}
                     </div>
-
                 </section>
 
             </main>
