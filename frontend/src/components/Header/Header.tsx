@@ -19,6 +19,10 @@ const Header = () => {
                         <span>Teams</span>
                         <FiUsers className="nav-icon" aria-hidden="true" />
                     </a>
+                    <a href="/board-members" className="teams-link">
+                        <span>Board</span>
+                        <FiUsers className="nav-icon" aria-hidden="true" />
+                    </a>
                     <a href="/apply" className="apply-link">
                         <span>Apply</span>
                         <FiFileText className="nav-icon" aria-hidden="true" />
