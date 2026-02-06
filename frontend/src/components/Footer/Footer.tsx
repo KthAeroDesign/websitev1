@@ -19,7 +19,7 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-            <p>© 2025 KTH Aero Design. All rights reserved.</p>
+            <p>© 2026 KTH Aero Design. All rights reserved.</p>
         </footer>
     );
 };
