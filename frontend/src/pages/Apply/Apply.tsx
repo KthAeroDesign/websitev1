@@ -5,7 +5,7 @@ import './Apply.css';
 
 const Apply = () => {
     const [activeTab, setActiveTab] = useState('General');
-    const applicationsOpen = false; // Change to true when applications are open
+    const applicationsOpen = true; // Change to true when applications are open
 
 
     return (
@@ -16,7 +16,8 @@ const Apply = () => {
                     <h2>Apply to KTH Aero Design</h2>
                     {applicationsOpen ? (
                         <>
-                            <p>Pick what you're applying for and fill out the corresponding form.</p>
+                            <p>Pick what you're applying for and fill out the corresponding form. </p>
+                            <p>Applications are open until March 9th.</p>
 
 
                             <div className="tabs">
@@ -37,7 +38,7 @@ const Apply = () => {
                                     <div className="form-panel">
                                         <div className="form-embed">
                                             <iframe
-                                                src="https://docs.google.com/forms/d/e/1FAIpQLSesTrVxWbkJ7Hyi6uf0UY-Nvlzb5H98yuBXm7PWrSTOtP5yjw/viewform?embedded=true"
+                                                src="https://docs.google.com/forms/d/e/1FAIpQLSeCsWdjpL5IMAD15lLbeQJKqN9Rp9bOOlswJHZFzz3yEUsvSQ/viewform?embedded=true"
                                                 title="General Application Form"
                                                 loading="lazy"
                                                 frameBorder="0"
