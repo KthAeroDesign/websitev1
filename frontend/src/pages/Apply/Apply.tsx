@@ -50,7 +50,7 @@ const Apply = () => {
                                         <p className="form-alt">
                                             Prefer a new tab?
                                             <a
-                                                href="https://docs.google.com/forms/d/e/1FAIpQLSesTrVxWbkJ7Hyi6uf0UY-Nvlzb5H98yuBXm7PWrSTOtP5yjw/viewform"
+                                                href="https://forms.gle/hRmeJ97y6nF7CbKd9"
                                                 target="_blank"
                                                 rel="noopener">
                                                 Open form ↗
