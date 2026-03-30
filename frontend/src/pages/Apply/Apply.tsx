@@ -5,7 +5,7 @@ import './Apply.css';
 
 const Apply = () => {
     const [activeTab, setActiveTab] = useState('General');
-    const applicationsOpen = true; // Change to true when applications are open
+    const applicationsOpen = false; // Change to true when applications are open
 
 
     return (
@@ -86,7 +86,7 @@ const Apply = () => {
                         </>
                     ) : (
                         <p style={{ marginTop: '2rem', fontSize: '1.2rem' }}>
-                            We are currently not accepting applications. Please check back later! <br></br> The form re-opens February 15.
+                            We are currently not accepting applications. Please check back later! <br></br> The form re-opens after the summer.
                         </p>
                     )}
                 </div>
